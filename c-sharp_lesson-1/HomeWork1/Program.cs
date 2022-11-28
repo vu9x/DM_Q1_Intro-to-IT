@@ -13,6 +13,25 @@ else{
 }
 
 // Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+Console.WriteLine("Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.");
+
+Console.Write("Input first int number: ");
+int num_first = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input second int number: ");
+int num_second = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input third int number: ");
+int num_third = Convert.ToInt32(Console.ReadLine());
+
+if(num_first > num_second & num_first > num_third){
+    Console.WriteLine($"max = {num_first}");
+}
+else if(num_second > num_third){
+    Console.WriteLine($"max = {num_second}");
+}
+else{
+    Console.WriteLine($"max = {num_third}");
+}
+
 // Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным 
 // (делится ли оно на два без остатка).
 Console.WriteLine("Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).");
